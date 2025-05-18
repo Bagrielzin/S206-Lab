@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "63615dcf-c617-4c7d-bb52-cea602d9de4d",
+		"name": "Aula 1 - Pokemon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44960080",
+		"_collection_link": "https://gabriel-4646105.postman.co/workspace/Gabriel's-Workspace~996c9288-7f08-400a-852f-22221a0e3233/collection/44960080-63615dcf-c617-4c7d-bb52-cea602d9de4d?action=share&source=collection_link&creator=44960080"
+	},
+	"item": [
+		{
+			"name": "Localiza pokemon com sucesso",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pokeapi.co/api/v2/pokemon/garchomp",
+					"protocol": "https",
+					"host": [
+						"pokeapi",
+						"co"
+					],
+					"path": [
+						"api",
+						"v2",
+						"pokemon",
+						"garchomp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Nao localiza pokemon (Nao existe)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pokeapi.co/api/v2/pokemon/garchomphah",
+					"protocol": "https",
+					"host": [
+						"pokeapi",
+						"co"
+					],
+					"path": [
+						"api",
+						"v2",
+						"pokemon",
+						"garchomphah"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Endpoint falho localiza pokemon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pokeapi.co/api/v2/pokemo/garchomp",
+					"protocol": "https",
+					"host": [
+						"pokeapi",
+						"co"
+					],
+					"path": [
+						"api",
+						"v2",
+						"pokemo",
+						"garchomp"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
